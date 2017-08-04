@@ -39,6 +39,8 @@ var ob_alumno =[{
 	"nombre":"Maria",
 	"nota":57}];
 
+
+//muestra la lista de alumnos y sus notas
 function lista_alumno(){
 	var i =0;
 	var l_html="";
@@ -52,12 +54,7 @@ function lista_alumno(){
 	document.getElementById("tabla").innerHTML=l_html;
 } 
 
-function prueba(){
-	var i=0;
-	for(i in ob_alumno){
-		alert(ob_alumno[i].codigo);
-	}
-}
+//busca la nota mayor
 
 function buscar_mayor(){
 	var i=1;
@@ -73,6 +70,8 @@ function buscar_mayor(){
 	document.getElementById("tabla").innerHTML=mayor;
 }
 
+//sacar el  promedio del la notas
+
 function sacar_promedio(){
 	var i=0;
 	var conta=1;
@@ -84,6 +83,8 @@ function sacar_promedio(){
 	resulta=suma/conta;
 	document.getElementById("tabla").innerHTML="<tr><th>promedio de notas </th></tr><tr><td>"+resulta.toFixed(2)+"</td></tr>"
 }
+
+//busca la nota menor de toda la lista
 
 function buscar_menor(){
 	var i=0;

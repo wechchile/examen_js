@@ -1,5 +1,6 @@
-body{
+*{
 
+background: #DDEDF0;
 }
 
 #container{
@@ -33,5 +34,6 @@ text-align: center;
 	text-align: center;
 }
 button{
-	padding:
+	outline: none;
+	border: none;
 }
