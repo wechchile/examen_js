@@ -4,39 +4,48 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="js/javascript.js" language="javascript" type="text/javascript"></script>
 
 </head>
 <body>
- <div id="contenedor" class="clearfix">
+ <div id="container" class="clearfix">
  	  <div id="row-1" class="row">
-			<div class="col-1">
+			<div id="imglogo" class="col-sm-2">
 					<img id="logo" src="image/nextu_logo_light.svg" alt="">
 			</div>
-			<div class="col-8">
-					 <h1>Examen de Java sprit</h1>
+			<div class="col-sm-10">
+					 <h1>Examen de Javascript</h1>
 			</div>
  	  </div>
  	  <div id="row-2" clase="row">
-			   <div class="col-4">
-			   	   <button onclick="lista_alumno()">lista de alumno</button>
+			   <div class="col-sm-3">
+			   	   <button onclick="lista_alumno()">Lista de alumno</button>
 			   </div>
-				 <div class="col-4">
+				 <div class="col-sm-3">
 				 	<button onclick="buscar_mayor()">Buscar el mayor</button>
 				 </div>
-				<div class="col-4">
+				<div class="col-sm-3">
 				 	<button onclick="sacar_promedio()">Promedio</button>
 				</div>
-				<div class="col-4">
+				<div class="col-sm-3">
 				 	<button onclick="buscar_menor()">Buscar el Menor</button>
 				</div>
 		</div>
-		<div>
-			<table id="tabla">
-				
-			</table>
-		</div>
+		<article>
+			<div clase="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<table id="tabla">
+
+					</table>	
+
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</article>
+		
  </div>
 
 

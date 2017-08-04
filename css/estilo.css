@@ -1,51 +1,37 @@
 body{
-	/*background: red;*/
+
 }
-*{
-	box-sizing: content-box;
-}
-#contenedor{
-	width: 900px;
-	height: 100%;
+
+#container{
+
 	background: #DDEDF0;
-	margin: auto;
-}
-.col- *{
-	float: left;
-	padding: 15px;
-	border: 5px solid red;
-	margin: 0PX;
-
 
 }
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 24.99%;}
-.col-4{width: 33.32%;}
-.col-5{width: 41.65%;}
-.col-6{width: 49.98%;}
-.col-7{width: 58.31%;}
-.col-8{width: 66.64%;}
-.col-9{width: 74.97%;}
-.col-10{width: 83.3%;}
-.col-11{width: 91.63%;}
-.col-12{width:100%;}
-
-/* titulo del examen*/
-h1{
-	display: block;
-	text-align: center;
+article{
+	background-color:  #DDEDF0;
+	height: 100%;
 }
 
 #logo{
 	width: 100%;
-	height: 37px;
+	height: 69px;
 }
-.clearfix::after{
-	content: "";
-	clear: both;
-	display: block;
+#imglogo{
+	height: 100&;
 }
-.row{
-	 width: 100%;
- }
+
+#cod{
+width: 40%;
+text-align: center;
+}
+#nom{
+	width: 50%;
+	text-align: center;
+}
+#nota{
+	width: 10%;
+	text-align: center;
+}
+button{
+	padding:
+}

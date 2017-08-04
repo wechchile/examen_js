@@ -44,7 +44,7 @@ function lista_alumno(){
 	var l_html="";
 
 	for( i in ob_alumno){
-		l_html+="<tr><th>Codigo</th><th>Nombre</th><th>Nota</th></tr><tr><td>"+ob_alumno[i].codigo+"</td><td>"+ob_alumno[i].nombre+"</td><td>"+ob_alumno[i].nota+"<td></tr>";
+		l_html+='<tr><th id="cod">Codigo</th><th id="nom">Nombre</th><th id="nota">Nota</th></tr><tr><td>'+ob_alumno[i].codigo+"</td><td>"+ob_alumno[i].nombre+"</td><td>"+ob_alumno[i].nota+"<td></tr>";
 		//alert(ob_alumno[i].codigo);
 		
 	}
@@ -66,7 +66,7 @@ function buscar_mayor(){
 	for(i in ob_alumno){
 		if (ob_alumno[i].nota> valor){
 			valor= ob_alumno[i].nota;
-			mayor="<tr><th>Codigo</th><th>Nombre</th><th>Nota</th></tr><tr><td>"+ob_alumno[i].codigo+"</td><td>"+ob_alumno[i].nombre+"</td><td>"+ob_alumno[i].nota+"<td></tr>";
+			mayor='<tr><th id="cod">Codigo</th><th id="nom">Nombre</th><th id="nota">Nota</th></tr><tr><td>'+ob_alumno[i].codigo+"</td><td>"+ob_alumno[i].nombre+"</td><td>"+ob_alumno[i].nota+"<td></tr>";
 		}
 			
 	}
@@ -82,7 +82,7 @@ function sacar_promedio(){
 		conta++;
 	}
 	resulta=suma/conta;
-	document.getElementById("tabla").innerHTML="<tr><th>promedio de notas </th></tr><tr><td>"+resulta+"</td></tr>"
+	document.getElementById("tabla").innerHTML="<tr><th>promedio de notas </th></tr><tr><td>"+resulta.toFixed(2)+"</td></tr>"
 }
 
 function buscar_menor(){
@@ -92,7 +92,7 @@ function buscar_menor(){
 	for(i in ob_alumno){
 		if(valor>ob_alumno[i].nota){
 			valor=ob_alumno[i].nota;
-			menor="<tr><th>Codigo</th><th>Nombre</th><th>Nota</th></tr><tr><td>"+ob_alumno[i].codigo+"</td><td>"+ob_alumno[i].nombre+"</td><td>"+ob_alumno[i].nota+"<td></tr>";
+			menor='<tr><th id="cod">Codigo</th><th id="nom">Nombre</th><th id="nota">Nota</th></tr><tr><td>'+ob_alumno[i].codigo+"</td><td>"+ob_alumno[i].nombre+"</td><td>"+ob_alumno[i].nota+"<td></tr>";
 		}
 		alert(menor);
 	}
